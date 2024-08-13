@@ -21,3 +21,146 @@ body {
     margin-bottom: 5px;
     margin-right: 2px;
 }
+
+.glass-effect {
+    background: rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid rgba(255, 234, 0, 0.5) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;,
+    inset 0 1px rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+
+.glass-effect:hover {
+    background: rgba(0, 0, 0, 0.4) !important;
+    border: 1px solid rgba(255, 234, 0, 0.9) !important;
+}
+
+.card h5 {
+    margin-bottom: 5% !important;
+    color: #FFEA00 !important;
+    font-weight: bold !important;
+}
+
+.card p {
+    font-size: small !important;
+    text-align: justify !important;
+}
+
+.card img {
+    border-radius: 8px !important;
+    border: 1px solid rgba(255, 234, 0, 0.1);
+}
+
+.custom-button:hover {
+    background-color: rgba(255, 234, 0, 0.5);
+}
+
+.custom-button:focus {
+    outline: none;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #242424;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #FFEA00;
+}
+
+#contact p,
+a {
+    padding: 0;
+    margin: 0;
+    font-size: small;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #FFEA00;
+}
+
+#contact>div {
+    border: #FFEA00 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #FFEA00;
+    color: rgb(0, 0, 0);
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    background: #ffffff;
+}
+
+.social-links a i {
+    color: #000000;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+}

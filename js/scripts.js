@@ -13,3 +13,7 @@ function close_loader() {
 $(window).ready(() => {
     console.log("Done.");
 });
+
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});

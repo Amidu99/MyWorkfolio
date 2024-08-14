@@ -38,7 +38,7 @@ body {
 }
 
 .card h5 {
-    margin-bottom: 5% !important;
+    margin-bottom: 5%;
     color: #FFEA00 !important;
     font-weight: bold !important;
 }
@@ -163,4 +163,40 @@ a {
         height: 40px;
         min-height: 40px;
     }
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+}
+
+.heading span {
+    color: #F1E807;
+}
+
+.credential {
+    margin-top: 100px;
+}
+
+.new-title {
+    margin-bottom: 0 !important;
+}
+
+.new-image {
+    padding: 5px;
+    border: none !important;
+}
+
+.text-body-secondary-new {
+    color: rgba(245, 245, 245, 0.75) !important;
+    font-weight: bold;
+}
+
+.updated-btn {
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
 }
